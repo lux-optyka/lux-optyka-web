@@ -1,0 +1,203 @@
+/*** ANIMATION KEYFRAMES ***/
+@keyframes darken{
+    from    { filter: brightness(100%);  }
+    to      { filter: brightness(50%);  }
+}
+@keyframes float-in{
+    from    { transform: translate(0, 0); }
+    to  { transform: translate(10px, -10px;) }
+}
+
+
+html, body{
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/*** TOP PAGE SECTION ***/
+.main-header {
+    text-align: center;
+    margin-bottom: 50%;
+}
+.main-page-image {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    z-index: -1;
+    filter: brightness(40%);
+
+    animation-name: darken;
+    animation-duration: 4s;
+}
+.section-title{
+    color: #fff;
+    font-weight: 13;
+    text-align: center;
+    margin-top: 30vh;
+    /*text-decoration: underline #e0484c;*/
+    animation: fadeInUp;
+    animation-delay: 6s;
+}
+.split-section p span{
+    color: #e0484c
+}
+.page-title-description-section{
+    position: absolute;
+    top: 50%;       /* for big screens */
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+}
+.page-title-description-section .main-title{
+    font-size: 53px;
+    font-weight: 13;
+    color: #eee;
+    animation: fadeInUp;
+    animation-duration: 3.5s;
+}
+.page-title-description-section .section-subtitle{
+    font-size: 25px;
+    font-weight: 12;
+    color: #eee;
+    animation: fadeInUp;
+    animation-duration: 4.5s;
+}
+
+
+
+
+/*** PROPERTIES FOR ALL WEBPAGE SECTIONS ***/
+.about-section, .about-offer, .contact{
+    background: #fff;
+     z-index: 5;
+    min-height: 40vh;
+    font-size: 18px;
+}
+
+
+
+
+/*** IMAGE STYLING IN MAIN SECTIONS ***/
+.image-place{
+    display: flex;
+    align-items: center;
+    margin-top: -20px
+}
+.about-section .img-square{
+    min-width: 32vw;
+    min-height: 12vh;
+    background-color: #e0484c;
+    position: relative;
+    z-index: 1;
+    margin-top: 5px
+}
+.about-offer .img-square{
+    min-width: 32vw;
+    min-height: 12vh;
+    background-color: #e0484c;
+    position: relative;
+    z-index: 1;
+}
+.contact .img-square{
+    min-width: 27vw;
+    min-height: 20vh;
+    background-color: #e0484c;
+    position: relative;
+    z-index: 1;
+}
+.image-place img{
+    max-width: 35vw;
+    max-height: 32vh;
+    position: absolute;
+    z-index: 5;
+    transform: translate( -10px, -10px )
+}
+
+
+
+
+/*** FOOTER STYLING ***/
+.main-footer{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 45px;
+    background-color: #1d1d1f;
+    color: #fff;
+    height: 25vh
+}
+.footer-heading-section{
+    margin-left: 30px;
+    margin-top: 40px
+}
+.footer-heading-section a{
+    color: #fff !important
+}
+.footer-heading-section ul{
+    display: flex;
+    flex-direction: column
+}
+.footer-heading-section ul li a:hover{
+    color: #e0484c !important;
+    transition: 0.5s
+}
+
+
+@media only screen and (max-width: 1060px){
+    .page-title-description-section{
+        top: 35% !important;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .about-section, .contact{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about-section .img-square{
+        min-width: 32vw;
+        min-height: 6vh;
+    }
+    .about-offer .img-square{
+        min-width: 32vw;
+        min-height: 9vh;
+    }
+    .contact .img-square{
+        min-width: 31vw;
+        min-height: 25vh;
+    }
+    p {
+        font-size: 15px;
+    }
+    .about-section, .about-offer, .contact {
+        min-height: 55vh
+    }
+    .about-section img{
+        margin-top: -10px;
+    }
+
+
+    .main-footer{
+        display: flex;
+        flex-direction: column;
+        min-height: 65vh;
+    }
+    .footer-heading-section hr{
+        width: 60vw;
+    }
+    .footer-heading-section ul li a{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .page-title-description-section{
+        top:25%;
+    }
+}

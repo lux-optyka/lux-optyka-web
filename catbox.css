@@ -1,0 +1,278 @@
+/*
+Theme Name:   Catbox Child
+Theme URI:    http://lux-optyka.pl/twenty-fifteen-child/
+Description:  Twenty Fifteen Child Theme
+Author:       Oliwier Szymański
+Author URI:   gitlab.com/oliszymanski/catBox/
+Template:     catbox
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Tags:         .my-nav-bar, .nav-items, .btn-pr, .border-rad-1, .border-rad-2, .border-rad-3, .border-rad-4, .border-rad-5, .border-rad-6, .border-rad-7, .border-rad-8, .border-rad-9, .border-rad-10, .split-section, .side-margin-n,
+Text Domain:  twentyfifteenchild
+*/
+
+html, body{
+    font-family: 'Rubik', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+
+:root{
+    /* other measurements */
+    --card-links-margin-top: 1rem;
+    --section-primary-margin-top: 70px;
+    --primary-footer-distance-top: 10vh;
+
+    /* gaps for rows and cols */
+    --split-section-row-gap: 45px;      /* split-section vars */
+    --split-section-col-gap: 10%;
+
+    --far-section-row-gap: 55px;        /* far-section vars */
+    --far-section-col-gap: 70px;
+
+    /* center section  */
+    --center-section-row-gap: 40px;    /* center-section vars */
+    --center-section-col-gap: 20px;
+}
+
+
+/**** NAVBAR STYLE ****/
+.my-nav-bar{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.nav-items ul li{
+    list-style: none;
+    margin-left: 3rem
+}
+
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #000
+}
+
+
+
+/**** BUTTON STYLING ****/
+button{
+    transition: .3s;
+    height: 35px;
+    font-size: 15px;
+}
+
+
+.btn-pr{
+    padding: 0 50px;
+    border: 2px solid #fff;
+    border-radius: 0px;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+.btn-pr:hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+
+
+
+.border-rad-1{           /* border radius levels */
+     border-radius: 2px;
+}
+.border-rad-2{
+     border-radius: 4px;
+}
+.border-rad-3{
+     border-radius: 6px;
+}
+.border-rad-4{
+     border-radius: 8px;
+}
+.border-rad-5{
+     border-radius: 10px;
+}
+.border-rad-6{
+     border-radius: 12px;
+}
+.border-rad-7{
+     border-radius: 14px;
+}
+.border-rad-8{
+     border-radius: 16px;
+}
+.border-rad-9{
+     border-radius: 18px;
+}
+.border-rad-10{
+     border-radius: 20px;
+}
+
+
+
+
+
+
+
+/**** SECTION STYLING ****/
+
+.split-section{
+    margin-top: var(--section-primary-margin-top);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: var(--split-section-col-gap);
+}
+
+
+.side-margin-0{
+    margin-right: 5px;          /* side width levels */
+        margin-left: 5px;
+}
+.side-margin-1{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.side-margin-2{
+    margin-right: 11px;
+    margin-left: 11px;
+}
+.side-margin-3{
+    margin-right: 14px;
+    margin-left: 14px;
+}
+.side-margin-4{
+    margin-right: 17px;
+    margin-left: 17px;
+}
+.side-margin-5{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.side-margin-6{
+    margin-right: 23px;
+    margin-left: 23px;
+}
+.side-margin-7{
+    margin-right: 26px;
+    margin-left: 26px;
+}
+.side-margin-8{
+    margin-right: 29px;
+    margin-left: 29px;
+}
+
+
+
+
+
+/**** CARD STYLES ****/
+
+/* without image */
+.card-w0{
+    max-width: 18rem;           /* card width levels */
+    font-size: 14px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+}
+.card-w1{
+    max-width: 22rem;
+    font-size: 14px;
+    padding: 15px 10px;
+    background-color: #fff;
+    /*border: 1px solid #1c1c1c;*/
+}
+.card-w2{
+    max-width: 26rem;
+    font-size: 14px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+}
+.card-w3{
+    max-width: 30rem;
+    font-size: 14px;
+    padding: 15px 10px;
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+}
+
+
+.card-links{
+    margin-top: var(--card-links-margin-top);
+}
+
+
+
+/* with image */
+.image-card{
+    font-size: 14px;
+    max-width: 19.5rem;
+    background-color: #fff;
+    border: 1px solid #1c1c1c;
+    display: inline;
+    padding: 0 0 5px 0;
+}
+
+.image-card img{
+    min-width: 100%;
+}
+
+.image-card > p, h3, .brn-pr, a {
+    padding: 15px 10px;
+}
+
+
+
+/**** STYLESHEET FOR FOOTER ****/
+.main-footer-h0{
+    margin-top: var(--primary-footer-distance-top);
+    min-height: 0;
+}
+.main-footer-h1{
+    margin-top: var(--primary-footer-distance-top);
+    min-height: 10rem;
+}
+.main-footer-h2{
+    margin-top: var(--primary-footer-distance-top);
+    min-height: 13rem;
+}
+.main-footer-h3{
+    margin-top: var(--primary-footer-distance-top);
+    min-height: 16rem;
+}
+.main-footer-h4{
+    margin-top: var(--primary-footer-distance-top);
+    min-height: 19rem;
+}
+
+
+
+
+/**** SCREEN SIZING WHEN WEB APP IS DISPLAYED ON PHONE ****/
+@media only screen and (max-width: 1000px){
+    .split-section{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        row-gap: 25px;
+    }
+
+    .buttons{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
